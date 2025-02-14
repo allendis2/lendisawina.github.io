@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>For You</title>
+    <style>
+        {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+    }
+     body {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(Screenshot\ 2025-02-12\ 144915.png);
+    font-family: cursive;
+    flex-direction: column;
+    }
+    .container {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    color: #d32f2f;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  .yes-button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #4c74af;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .no-button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    background-color: #f4be36;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .gif_container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+    </style>
+   
+</head>
+
+<body>
+  <div class="container">
+      <h1>Will you be my Valentine, Wina?</h1>
+        <div class="buttons">
+            <button class="yes-button" onclick="handleYesClick()">YES</button>
+            <button class="no-button" onclick="handleNoClick()">NO</button>
+        </div>
+        <div class="gif_container">
+            <img src="https://media.giphy.com/media/xKRa4f8OO5jiw/giphy.gif?cid=ecf05e47t4e0gb32teqcqdta4ra78qckwhidz5jfsllziyhq&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Cute GIF">
+        </div>
+    </div>
+  <body>
+    <audio id="song"> 
+      <source src="yung kai - blue (Lyrics).mp4">
+    </audio>
+    <!--now js-->
+    <script>
+      window.addEventListener ( 'click' , () => {
+        document.getElementById ("song") .play ();
+      });
+    </script>
+  </body>
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
